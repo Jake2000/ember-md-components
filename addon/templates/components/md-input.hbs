@@ -1,0 +1,20 @@
+{{#if label}}
+  <label for={{inputElementId}}>{{label}}</label>
+{{/if}}
+{{input
+  class="md-input"
+  classNameBindings=inputClassNameBindings
+  danger=danger
+  success=success
+  id=inputElementId
+  placeholder=placeholder
+  type=type
+  value=value
+  focus-in="focusIn"
+  key-down="keyDown"
+  focus-out="focusOut"
+  disabled=disabled
+  required=required
+}}
+
+<span class="md-input-bar"></span>
