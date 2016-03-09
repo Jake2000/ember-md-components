@@ -1,1 +1,38 @@
-{{yield}}
+{{#if label}}
+  <label for={{inputElementId}}>{{label}}</label>
+{{/if}}
+{{textarea
+  class="md-input"
+  id=inputElementId
+  autocapitalize=autocapitalize
+  autocorrect=autocorrect
+  autofocus=autofocus
+  autoresize=autoresize
+  disabled=disabled
+  form=form
+  maxlength=maxlength
+  placeholder=placeholder
+  readonly=readonly
+  required=required
+  selectionDirection=selectionDirection
+  spellcheck=spellcheck
+  tabindex=tabindex
+  title=title
+  rows=rows
+  cols=cols
+  name=name
+  max-rows=max-rows
+  max-height=max-height
+  max-width=max-width
+  selectionEnd=selectionEnd
+  selectionStart=selectionStart
+  wrap=wrap
+  lang=lang
+  dir=dir
+  value=value
+  focus-in="focusIn"
+  key-down="keyDown"
+  focus-out="focusOut"
+}}
+
+<span class="md-input-bar"></span>
