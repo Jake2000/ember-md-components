@@ -2,4 +2,112 @@
 {{md-textarea label='textarea' autoresize=true max-rows=10}}
 {{md-checkbox checked=true label='test'}}
 
-{{md-radio label='test' toggle=true}}
+{{md-radio label='test' value="1" selected=selected}}
+{{md-radio label='test 2' value="2" selected=selected}}
+
+<h2>Buttons</h2>
+
+<h3>Raised</h3>
+
+{{#md-button}}
+  default
+{{/md-button}}
+{{#md-button primary=true}}
+  primary
+{{/md-button}}
+{{#md-button warning=true}}
+  warning
+{{/md-button}}
+{{#md-button danger=true}}
+  danger
+{{/md-button}}
+{{#md-button success=true}}
+  success
+{{/md-button}}
+{{#md-button disabled=true}}
+  disabled
+{{/md-button}}
+
+<h3>Flat</h3>
+
+{{#md-flat-button}}
+  default
+{{/md-flat-button}}
+{{#md-flat-button primary=true}}
+  primary
+{{/md-flat-button}}
+{{#md-flat-button warning=true}}
+  warning
+{{/md-flat-button}}
+{{#md-flat-button danger=true}}
+  danger
+{{/md-flat-button}}
+{{#md-flat-button success=true}}
+  success
+{{/md-flat-button}}
+{{#md-flat-button disabled=true}}
+  disabled
+{{/md-flat-button}}
+
+<h3>Size</h3>
+
+{{#md-button small=true primary=true}}
+  small
+{{/md-button}}
+{{#md-button large=true primary=true}}
+  large
+{{/md-button}}
+<br />
+{{#md-button block=true primary=true}}
+  block
+{{/md-button}}
+
+
+<h2>Fab buttons</h2>
+
+{{#md-fab-button}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button accent=true}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button primary=true}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button warning=true}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button danger=true}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button success=true}}
+  <i>+</i>
+{{/md-fab-button}}
+{{#md-fab-button disabled=true}}
+  <i>+</i>
+{{/md-fab-button}}
+
+{{#md-fab-button small=true}}
+  <i>+</i>
+{{/md-fab-button}}
+
+<h2>Fab wrapper</h2>
+
+{{#md-fab-wrapper speedDial=true as |wrapper|}}
+  {{#wrapper.fab speedDial=true}}
+    <i>+</i>
+    <i style="display:none">x</i>
+  {{/wrapper.fab}}
+
+  {{#wrapper.small}}
+    {{#wrapper.fab small=true}}
+      <i>1</i>
+    {{/wrapper.fab}}
+    {{#wrapper.fab small=true accent=true}}
+      <i>2</i>
+    {{/wrapper.fab}}
+    {{#wrapper.fab small=true primary=true}}
+      <i>3</i>
+    {{/wrapper.fab}}
+  {{/wrapper.small}}
+{{/md-fab-wrapper}}
