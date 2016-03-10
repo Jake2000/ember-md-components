@@ -1,6 +1,6 @@
 {
   "name": "ember-md-components",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "The ember material design components",
   "directories": {
     "doc": "doc",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
+    "ember-autoresize": "0.5.14",
     "ember-cli": "2.4.2",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-dependency-checker": "^1.2.0",

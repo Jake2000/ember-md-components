@@ -22,26 +22,26 @@ export default Component.extend({
   value: '',
   classNames: ['md-input-wrapper'],
   classNameBindings: [
-    'focus:md-input-focus',
-    'filled:md-input-filled',
-    'danger:md-input-wrapper-danger',
-    'success:md-input-wrapper-success',
-    'disabled:md-input-wrapper-disabled'
+    'focus:md-input-wrapper--focus',
+    'filled:md-input-wrapper--filled',
+    'danger:md-input-wrapper--danger',
+    'success:md-input-wrapper--success',
+    'disabled:md-input-wrapper--disabled'
   ],
   _danger: on('didRender', observer('danger', function() {
     let $input = this.$('input');
     if(this.get('danger')) {
-      $input.addClass('md-input-danger');
+      $input.addClass('md-input--danger');
     } else {
-      $input.removeClass('md-input-danger');
+      $input.removeClass('md-input--danger');
     }
   })),
   _success: on('didRender', observer('success', function() {
     let $input = this.$('input');
     if(this.get('success')) {
-      $input.addClass('md-input-success');
+      $input.addClass('md-input--success');
     } else {
-      $input.removeClass('md-input-success');
+      $input.removeClass('md-input--success');
     }
   })),
   inputElementId: computed('elementId', function() {
