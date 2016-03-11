@@ -37,5 +37,8 @@ export default Component.extend({
     'name',
     'type',
     'value'
-  ]
+  ],
+  click() {
+    this.sendAction('action');
+  }
 });
